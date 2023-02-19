@@ -25,6 +25,7 @@ potDRC = Crucero
 potIZD = Crucero
 basic.forever(function () {
     if (maqueen.readPatrol(maqueen.Patrol.PatrolLeft) == 0 && maqueen.readPatrol(maqueen.Patrol.PatrolRight) == 0) {
+        // Aumentar la velocidad en rectas
         if (estado == 0 && Crucero < maxV) {
             Crucero += 1
         }
